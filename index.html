@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Auto changing title</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" language="javascript">
+          var order = 1;
+          var text1 = "Javascript";
+          var text2 = "Html";
+          var text3 = "Css";
+          var text4 = "Php";
+          var text5 = "Asp";
+          var text6 = "jquery";
+
+          function changing(){
+            if(order==1){
+                window.status = text1;
+                document.title = text1;
+                order++;
+            }else if(order==2){
+                window.status = text2;
+                document.title = text2;
+                order++;
+            }else if(order==3){
+                window.status = text3;
+                document.title = text3;
+                order++;
+            }else if(order==4){
+                window.status = text4;
+                document.title = text4;
+                order++;
+            }else if(order==5){
+                window.status = text5;
+                document.title = text5;
+                order++;
+            }else if(order==6){
+                window.status = text6;
+                document.title = text6;
+                order = 1;
+            }
+            window.setTimeout("changing();", 2000);
+          }
+          changing();
+        </script>
+    </body>
+</html>
